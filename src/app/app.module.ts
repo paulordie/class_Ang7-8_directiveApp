@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { FormsModule } from '@angular/forms';
+import { MatSelectModule,
+          MatRadioModule,
+          MatCardModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -12,7 +16,11 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
