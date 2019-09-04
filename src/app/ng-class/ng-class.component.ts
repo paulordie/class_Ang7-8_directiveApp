@@ -10,7 +10,7 @@ export class NgCLassComponent implements OnInit {
   myclass = "myclass1";
 
   constructor() { 
-    console.log("SubNgIfComponent");
+    
   }
 
   ngOnInit() {
