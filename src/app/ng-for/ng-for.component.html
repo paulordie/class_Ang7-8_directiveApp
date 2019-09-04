@@ -10,8 +10,13 @@
 
 <mat-card>
     <mat-card-content>
-        <mat-selection-list>
+        <mat-selection-list #selectednames>
             <mat-list-option *ngFor="let name of names">{{ name }}</mat-list-option>
         </mat-selection-list>
     </mat-card-content>
+    <mat-card-footer>
+        <P>
+            options selected: {{ selectednames.selectedOptions.selected.length }}
+        </P>
+    </mat-card-footer>
 </mat-card>
