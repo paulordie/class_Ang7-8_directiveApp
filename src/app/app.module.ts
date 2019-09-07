@@ -12,7 +12,8 @@ import { MatSelectModule,
           MatInputModule,
           MatListModule,
           MatIconModule,
-          MatDividerModule} from '@angular/material';
+          MatDividerModule,
+          MatButtonModule} from '@angular/material';
 import { NgCLassComponent } from './ng-class/ng-class.component';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { SubNgIfComponent } from './ng-if/sub-ng-if/sub-ng-if.component';
@@ -40,7 +41,8 @@ import { NgForFormComponent } from './ng-for-form/ng-for-form.component';
     MatInputModule,
     MatListModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

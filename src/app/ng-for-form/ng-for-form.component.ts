@@ -10,7 +10,7 @@ export class NgForFormComponent implements OnInit {
   name: string = "";
   address: string = "";
   phone: string = "";
-  cities: string = "";
+  city: string = "";
   age: number = 0;
 
   cities = [
@@ -20,10 +20,32 @@ export class NgForFormComponent implements OnInit {
     {name: "Rio de Janeiro", state: "RJ"}
  
   ]
+
+  clients = [];
   
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(){
   }
 
+  save(){
+    this.clients.push(
+     { name: this.name,
+      address: this.address,
+      city: this.city,
+      age: this.age,
+      phone: this.phone
+   
+    }
+    );
+    this.cancel();
+    console.log(this.clients);
+  }
+  cancel(){
+    this.name = "";
+    this.address = "";
+    this.city = "";
+    this.phone = "";
+    this.age = 0;
+  }
 }
