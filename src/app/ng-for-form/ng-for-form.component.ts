@@ -31,12 +31,11 @@ export class NgForFormComponent implements OnInit {
   save(){
     this.clients.push(
      { name: this.name,
-      address: this.address,
-      city: this.city,
-      age: this.age,
-      phone: this.phone
-   
-    }
+       address: this.address,
+       city: this.city,
+       phone: this.phone,
+       age: this.age
+     }
     );
     this.cancel();
     console.log(this.clients);
@@ -47,5 +46,10 @@ export class NgForFormComponent implements OnInit {
     this.city = "";
     this.phone = "";
     this.age = 0;
+  }
+
+  delete(i: number){
+    this.clients.splice(i,1);
+    console.log("delete" + i);
   }
 }
