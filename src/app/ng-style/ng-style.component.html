@@ -24,6 +24,13 @@
     </mat-card-content>
     <mat-card-footer>
         <p>Result:</p>
-        <p [ngStyle]=" { fontSize: myFontSize, color: myColor }">TEST</p>
+        <p [ngStyle]="{ fontSize: myFontSize, color: myColor }">TEST</p>
     </mat-card-footer>
   </mat-card>
+
+<!-- <mat-card>
+  <mat-card-content>
+    <p [(ngModel)]="myColor1" name="mycolor1"></p>
+    <p [ngStyle]="{color: myColor1}"> Test2</p>
+  </mat-card-content>
+</mat-card> -->
